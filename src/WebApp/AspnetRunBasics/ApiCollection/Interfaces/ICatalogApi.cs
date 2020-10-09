@@ -4,8 +4,11 @@ using System.Threading.Tasks;
 
 namespace AspnetRunBasics.ApiCollection.Interfaces
 {
-    public interface IOrderApi
+    public interface ICatalogApi
     {
-        Task<IEnumerable<OrderResponseModel>> GetOrdersByUserName(string userName);
+        Task<IEnumerable<CatalogModel>> GetCatalog();
+        Task<IEnumerable<CatalogModel>> GetCatalogByCategory(string category);
+        Task<CatalogModel> GetCatalog(string id);
+        Task<CatalogModel> CreateCatalog(CatalogModel model);
     }
 }

@@ -36,4 +36,3 @@ services:
     build:
       context: .
       dockerfile: src/ApiGateway/OcelotAPIGateway/Dockerfile
-
